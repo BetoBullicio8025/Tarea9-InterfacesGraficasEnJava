@@ -17,7 +17,7 @@ public class Principal extends Frame {
     public Principal(String title) throws HeadlessException {
         super(title);
         this.setLayout(new FlowLayout());
-        LblNombre = new Label("Nombre la niñita q mas amas: ");
+        LblNombre = new Label("Nombre: ");
         this.add(LblNombre);
         txtNombre = new TextField(30);
         this.add(txtNombre);
@@ -27,7 +27,7 @@ public class Principal extends Frame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 System.out.println( txtNombre.getText() );
-                JOptionPane.showMessageDialog(null, "Edu te ama muchooo " + txtNombre.getText());
+                JOptionPane.showMessageDialog(null, "Buenos diaas " + txtNombre.getText());
 
             }
         });
